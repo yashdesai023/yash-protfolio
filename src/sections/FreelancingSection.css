@@ -1,0 +1,123 @@
+.freelancing-section {
+  padding: 50px 1%;
+  background-color: #000000;
+  text-align: center;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-header h2::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 3px;
+  background: #299d02;
+}
+
+.tagline {
+  color: #A0A0A0;
+  font-size: 1.1em;
+  max-width: 600px;
+  margin: 0 auto 50px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.service-card {
+  background: #1A1A1A;
+  padding: 40px 30px;
+  border-radius: 1rem;
+  border: 1px solid #282828;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px #0072FF22;
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: #299d02;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-size: 1.4rem;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  color: #A0A0A0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.service-tech {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.service-tech span {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #E0E0E0;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+}
+
+.cta-banner {
+  background: #299d0216;
+  padding: 40px;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.cta-banner h3 {
+  font-size: 1.8rem;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+/* Reusing button styles from previous sections for consistency */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 25px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #299d02;
+  color: #FFFFFF;
+  border: none;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 25px rgba(0, 67, 25, 0.6);
+  transform: translateY(-3px);
+}
