@@ -6,7 +6,7 @@ import { projectsData } from "../data/projectsData";
 const ProjectItem = ({ title, backgroundImg, projectUrl, tech }) => {
     return (
         <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-700 rounded-xl group overflow-hidden bg-white/5 backdrop-blur-md border border-white/20">
-            <Image className="rounded-xl group-hover:opacity-10 object-cover w-full h-full" src={backgroundImg} alt={title} width={640} height={360} /> 
+            <Image className="rounded-xl group-hover:opacity-10 object-cover w-full h-full" src={backgroundImg} alt={title} width={640} height={360} />
             <div className="hidden group-hover:flex flex-col items-center justify-center absolute top-0 left-0 w-full h-full bg-black/60 backdrop-blur-sm transition-all duration-300">
                 <h3 className="text-2xl text-white tracking-wider text-center font-bold">
                     {title}
@@ -55,7 +55,7 @@ const Projects = () => {
                 <div className="flex justify-center mt-12">
                     <button
                         onClick={handleShowMoreLess}
-                        className="p-4 rounded-xl uppercase bg-white text-black font-bold hover:bg-gray-200 transition-colors duration-300"
+                        className="p-4 rounded-xl uppercase bg-white text-black font-bold hover:bg-gray-200 transition-colors duration-300 cursor-pointer"
                     >
                         {visibleProjects < projects.length ? "Load More Projects" : "Show Less"}
                     </button>

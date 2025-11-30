@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
@@ -39,12 +40,16 @@ const Hero = () => {
                         I specialize in building intelligent, production-ready AI systems that automate workflows, enhance business efficiency, and deliver measurable results.
                     </p>
                     <div className="flex gap-4">
-                        <button className="px-6 py-3 rounded-full bg-white text-black font-bold hover:bg-gray-200 transition duration-300 shadow-[0_0_15px_rgba(255,255,255,0.3)]">
-                            View Projects
-                        </button>
-                        <button className="px-6 py-3 rounded-full border border-white text-white font-bold hover:bg-white hover:text-black transition duration-300 shadow-[0_0_15px_rgba(255,255,255,0.1)]">
-                            Contact Me
-                        </button>
+                        <Link href="/#projects">
+                            <button className="px-6 py-3 rounded-full bg-white text-black font-bold hover:bg-gray-200 transition duration-300 shadow-[0_0_15px_rgba(255,255,255,0.3)] cursor-pointer">
+                                View Projects
+                            </button>
+                        </Link>
+                        <Link href="/#contact">
+                            <button className="px-6 py-3 rounded-full border border-white text-white font-bold hover:bg-white hover:text-black transition duration-300 shadow-[0_0_15px_rgba(255,255,255,0.1)] cursor-pointer">
+                                Contact Me
+                            </button>
+                        </Link>
                     </div>
                 </div>
 

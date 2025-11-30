@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Yash | Front-End Developer",
+  title: "All About Yash Desai",
   description: "Personal portfolio of Yash, a Front-End Developer specializing in React and Next.js.",
 };
 
